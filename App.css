@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  background-color: #318CE7;
+  color: #333;
+}
+
+.App {
+  background-color: white;
+  border-radius: 5vh;
+  margin: 8vh 15vh 0vh 15vh;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 0.2vh solid #f2f2f2;
+
+  margin: 0vh 0vh 0vh 0vh;
+  padding-bottom: 50vh;
+}

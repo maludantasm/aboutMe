@@ -1,0 +1,25 @@
+.element {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 15vh;
+    margin-left: 3vh;
+
+    padding-bottom: 4vh;
+}
+
+.element-title {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.element svg {
+    color: #318CE7;
+    margin-right: 2.1vh;
+}
+
+.element p {
+    font-size: 1.5vh;
+}

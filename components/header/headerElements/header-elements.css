@@ -1,0 +1,25 @@
+.header li {
+    padding-right: 2.5vh;
+    list-style: none;
+}
+
+.menu-end a {
+    text-decoration: none;
+    color: dimgray;
+    display: flex;
+    align-items: center;
+    transition: transform 250ms;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+.menu-end a:hover > svg {
+    transform: translateY(0.2vh);
+}
+
+svg {
+    padding-left: 0.5vh;
+    transition: transform 250ms;
+}
