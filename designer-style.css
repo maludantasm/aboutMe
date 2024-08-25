@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: #F3F3F6;
+    font-family: "Open Sans", sans-serif;
+    color: #1A1A1A;
+
+    margin: 0;
+}
+
+#body-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 16px;
+    /* background-image: url('./assets/images/fundo-de-papel-de-desenho-plano-com-linha-azul_23-2151126430.avif'); */
+}
+
+.layers, .controls, .editor {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    font-size: smaller;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.layers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 12px 0;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 336px;
+    height: 92%;
+}
+
+.layers > div, .editor > div {
+    margin: 0 16px;
+}
+
+.layers .bi-chevron-down, .editor .bi-chevron-down {
+    height: 8px;
+    width: 8px;
+
+    margin-left: 4px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 80px;
+    padding: 16px 8px;
+}
+
+.controls > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 16px;
+}
+
+.controls .bi-chevron-down {
+    height: 8px;
+    width: 8px;
+
+    margin-left: 8px;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 12px 0;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 272px;
+    height: 92%;
+    margin-right: 16px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    height: 48px;
+    width: 120px;
+}
+
+.pages a {
+    height: 20px;
+    width: 20px;
+}

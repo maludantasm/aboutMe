@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #1E1F28;
+    max-width: 100%;
+    margin: 0 auto !important;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #DFDFDF;
+    color: #4F4F4F;
+    border: 1px solid #B9B9B9;
+    border-radius: 8px 8px 0 0;
+
+    height: 56px;
+    padding: 0 16px;
+}
+
+#header-container .option-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#header-container .dir {
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+}
+
+#body-container {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: larger;
+    color: #F8F8F2;
+
+    padding-left: 16px;
+}
+
+.cmd-block {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+.cmd-line {
+    display: flex;
+    align-items: center;
+
+    margin: 16px 0 8px 0;
+}
+
+.cmd-line p {
+    margin: 0;
+}
+
+.cmd-line .brackets {
+    color: #767A96;
+    font-weight: 100;
+}
+
+.cmd-line .cmd-text {
+    display: flex;
+    align-items: center;
+}
+
+.cmd-line .symbol {
+    color: #93F4FF;
+    margin: 0 8px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
+
+.cmd-line .command {
+    color: #F5A2F1;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1s steps(3, end),
+      blink-caret .75s step-end;
+}
+
+.result {
+    display: flex;
+    word-spacing: 40px;
+
+    color: #D9ADFD;
+}
+
+.scroll-bar {
+    background-color: #FAFAFA;
+    border: 2px solid #E8E8E8;
+
+    position: fixed;
+    right: 0;
+
+    width: 16px;
+    height: 100%;
+}
+
+.scroll-bar .sb-square {
+    display: flex;
+    justify-content: center;
+
+    background-color: #F1F1F1;
+    border: 2px solid #AFAFAF;
+
+    height: 12px;
+    width: 12px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    height: 48px;
+    width: 120px;
+}
+
+.pages a {
+    height: 20px;
+    width: 20px;
+}
