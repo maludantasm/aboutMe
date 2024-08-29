@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    margin: 0 16px;
+    margin: 16px;
     /* background-image: url('./assets/images/fundo-de-papel-de-desenho-plano-com-linha-azul_23-2151126430.avif'); */
 }
 
@@ -32,11 +32,8 @@ body {
 
     padding: 12px 0;
 
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
     width: 336px;
-    height: 92%;
+    height: 94vh;
 }
 
 .layers > div, .editor > div {
@@ -80,11 +77,7 @@ body {
 }
 
 .cv-content {
-    position: absolute;
-    z-index: -1;
-    top: 40%;
-    left: 51.8%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 196px;
 }
 
 .grid-container, .grid-item .item-content {
@@ -119,13 +112,8 @@ body {
 
     padding: 12px 0;
 
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
     width: 272px;
-    height: 92%;
-    margin-right: 16px;
+    height: 94vh;
 }
 
 #footer-container {
