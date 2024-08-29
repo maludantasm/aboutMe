@@ -92,28 +92,6 @@ body {
     color: #D9ADFD;
 }
 
-.scroll-bar {
-    background-color: #FAFAFA;
-    border: 2px solid #E8E8E8;
-
-    position: fixed;
-    right: 0;
-
-    width: 16px;
-    height: 100%;
-}
-
-.scroll-bar .sb-square {
-    display: flex;
-    justify-content: center;
-
-    background-color: #F1F1F1;
-    border: 2px solid #AFAFAF;
-
-    height: 12px;
-    width: 12px;
-}
-
 #footer-container {
     display: flex;
     justify-content: center;
