@@ -152,4 +152,27 @@
         </div>
     </div>
 </body>
+
+<script>    
+    const commandElements = document.querySelectorAll(".command");
+    const typingSpeed = 80; // Adjust the typing speed (milliseconds)
+
+    commandElements.forEach(commandElement => {
+    const commandText = commandElement.textContent;
+    commandElement.textContent = "";
+
+    let currentCharIndex = 0;
+
+    function typeCommand() {
+        if (currentCharIndex === commandText.length) return;
+
+        commandElement.textContent += commandText[currentCharIndex];
+        currentCharIndex++;
+
+        setTimeout(typeCommand, typingSpeed);
+    }
+
+    typeCommand();
+    });
+</script>
 </html>

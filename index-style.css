@@ -1,20 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
-    background-color: #f6f4dd;
-    font-family: "Indie Flower", cursive;
+    background-color: #C1E0FC;
+    
+    font-family: "Patrick Hand SC", cursive;
     margin: 0;
 }
 
-#body-container {
-    color: #ff78d4;
-    font-size: xx-large;
+.paper-texture {
+    /* background-image: url("./assets/images/paper-texture.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    
+    height: 100%;
+    width: 100%;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -50px -50px;
+    padding-top: 72px;
 }
+
+#header-container {
+    display: flex;
+    align-items: center;
+
+    margin: 0 72px 72px 72px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-family: "Patrick Hand", cursive;
+    font-weight: 200;
+    font-size: 28px;
+    color: #FCF7E6;
+    line-height: 8px;
+
+    background-color: #589BFF;
+
+    height: 112px;
+    width: 472px;
+
+    border: #1D1D1F solid 4px;
+    border-radius: 12px;
+
+    margin-left: 128px;
+    padding-left: 96px;
+}
+
+#body-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    color: #1D1D1F;
+
+    margin: 72px;
+}
+
+.second-half {
+    width: 36%;
+}
+
+.block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+
+    background-color: #FFFAE9;
+    border: #1D1D1F solid 4px;
+    border-radius: 40px;
+
+    height: 104px;
+}
+
+.first-half ul, .second-half ul {
+    font-size: 24px;
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+}
+
+.first-half li, .second-half li {
+    padding-left: var(--gutter);
+    height: 56px;
+}
+
+.first-half li::marker,  .second-half li::marker {
+    content: "\f00a"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+  }
 
 #footer-container {
     display: flex;
