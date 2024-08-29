@@ -44,7 +44,7 @@ body {
     height: 112px;
     width: 472px;
 
-    border: #1D1D1F solid 4px;
+    border: #1D1D1F solid 2px;
     border-radius: 12px;
 
     margin-left: 128px;
@@ -73,7 +73,7 @@ body {
     font-size: 28px;
 
     background-color: #FFFAE9;
-    border: #1D1D1F solid 4px;
+    border: #1D1D1F solid 2px;
     border-radius: 40px;
 
     height: 104px;
@@ -92,10 +92,10 @@ body {
 }
 
 .first-half li::marker,  .second-half li::marker {
-    content: "\f00a"; /* FontAwesome Unicode */
+    /* content: "\f0c9"; */
     font-family: FontAwesome;
     font-size: var(--icon-size);
-  }
+}
 
 #footer-container {
     display: flex;
