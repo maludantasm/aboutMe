@@ -79,6 +79,39 @@ body {
     margin-left: 8px;
 }
 
+.cv-content {
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 51.8%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-container, .grid-item .item-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.grid-item {
+    background-color: #FFFFFF;
+    padding: 10px 16px;
+    text-align: left; 
+
+    height: 256px;
+    width: 352px;
+}
+
+.grid-item .item-title {
+    font-size: 11px;
+    color: #a5a5a5;
+
+    position: relative;
+    top: -15%;
+    left: -4%;
+}
+
 .editor {
     display: flex;
     flex-direction: column;
@@ -101,6 +134,7 @@ body {
 
     position: fixed;
     bottom: 0;
+
     width: 100%;
     margin-bottom: 32px;
 }
