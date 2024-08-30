@@ -36,6 +36,9 @@ body {
     align-items: center;
 
     margin: 0 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #body-container {
@@ -86,12 +89,13 @@ body {
 }
 
 .result {
-    color: #e2beff;
+    color: #D9ADFD;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-columns: minmax(200px, auto);
     gap: 0;
 }
 
