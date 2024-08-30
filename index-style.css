@@ -6,11 +6,7 @@ body {
     font-family: "Patrick Hand SC", cursive;
 
     position: relative;
-    height: 100%;
-    width: 100%;
-
     margin: 0;
-    padding-top: 72px;
 }
 
 .overlay {
@@ -21,16 +17,13 @@ body {
 
     width: 100%;
     height: 100%;
-
-    opacity: 1;
-    mix-blend-mode: multiply;
 }
 
-#header-container {
-    display: flex;
-    align-items: center;
+.header-pfp {
+    position: absolute; 
 
-    margin: 0 72px 72px 72px;
+    border-radius: 100%; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header-text {
@@ -40,25 +33,148 @@ body {
     justify-content: center;
 
     font-family: "Patrick Hand", cursive;
-    font-weight: 200;
-    font-size: 28px;
     color: #FCF7E6;
     line-height: 8px;
 
     background-color: #589BFF;
 
-    height: 112px;
-    width: 472px;
-
     border: #1D1D1F solid 2px;
     border-radius: 12px;
-    /* box-shadow: rgba(99, 99, 99, 0.16) 3px 3px 6px, rgba(99, 99, 99, 0.23) 0px 3px 6px; */
-
-    margin-left: 128px;
-    padding-left: 96px;
 }
 
-#body-container {
+.block-title {
+    text-align: center;
+    background-color: #FFFAE9;
+
+    border: #1D1D1F solid 2px;
+    border-radius: 40px;
+
+    margin: 0;
+    padding: 16px 0;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    height: 48px;
+    width: 120px;
+}
+
+.pages a {
+    height: 20px;
+    width: 20px;
+}
+
+  
+.block ul {
+    --icon-size: 0.8em;
+}
+
+.block li {
+    padding-left: var(--gutter);
+    height: 48px;
+}
+
+.block li::marker {
+    /* content: "\f0c9"; */
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+}
+
+@media (min-width: 768px) {
+    #body-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: #1D1D1F;
+        margin: 72px;
+    }
+
+    .header-pfp {
+        height: 168px; 
+    }
+  
+    .block-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 48px 24px;
+    }
+
+    #header-container {
+        display: flex;
+        align-items: center;
+    
+        margin-bottom: 56px;
+    }
+
+    .header-pfp {
+        height: 96px; 
+    }
+
+    .header-text {
+        font-size: 20px;
+
+        height: 72px;
+        width: 256px;
+
+        margin-left: 16px;
+        padding-left: 96px;
+    }
+
+    #body-container {
+        width: 100%;
+    }
+
+    .block {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .block-title {
+        font-size: larger;
+        justify-self: center;
+
+        margin-bottom: 24px;
+    }
+
+    .block li {
+        font-size: 16px;
+    }
+
+    .plaque {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%); 
+        width: 70%;
+    }
+
+    .plaque .right {
+        margin-left: 79.8%;
+    }
+}
+
+/* #body-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -99,7 +215,6 @@ body {
 }
 
 .first-half li::marker,  .second-half li::marker {
-    /* content: "\f0c9"; */
     font-family: FontAwesome;
     font-size: var(--icon-size);
 }
@@ -129,4 +244,4 @@ body {
 .pages a {
     height: 20px;
     width: 20px;
-}
+} */

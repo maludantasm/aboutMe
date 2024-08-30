@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="header-container">
-        <img src="./assets/images/pfp.PNG" alt="my-pfp" style="height: 168px; position: absolute; border-radius: 100%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img class="header-pfp" src="./assets/images/pfp.PNG" alt="my-pfp">
             
         <div class="header-text">
             <p id="name" style="margin-bottom: 0;"></p>
@@ -21,16 +21,18 @@
     </div>
 
     <div id="body-container">
-        <div class="first-half academic-history" style="margin-right: 40px; width: 50%;">
-            <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 10%; top: 27%;">
-                <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
-            </svg>
+        <div class="block academic-history">
+            <div class="plaque">
+                <svg class="left" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
+                </svg>
 
-            <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left:43%; top: 27%;">
-                <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
-            </svg>
+                <svg class="right" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
+                </svg>
+            </div>
 
-            <p class="block-title">Academic History</p>
+            <p class="block-title">Academic history</p>
 
             <ul>
                 <li>1 year internship at ClickDb</li>
@@ -44,43 +46,45 @@
             </ul>
         </div>
 
-        <div class="second-half">
-            <div class="Hobbies">
-                <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right:30%; top: 27%;">
+        <div class="block personal-interests">
+            <div class="plaque">
+                <svg class="left" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
                     <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
                 </svg>
 
-                <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right:8%; top: 27%;">
+                <svg class="right" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
                     <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
                 </svg>
-
-                <p class="block-title">Hobbies</p>
-
-                <ul>
-                    <li>Running</li>
-                    <li>Archery</li>
-                    <li>TV shows</li>
-                </ul>
             </div>
 
-            <div class="personal-interests">
-                <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right:30%; top: 60%;">
+            <p class="block-title">Personal interests</p>
+
+            <ul>
+                <li>Graphic design</li>
+                <li>User experience</li>
+                <li>Branding</li>
+                <li>Project management</li>
+            </ul>
+        </div>
+
+        <div class="block hobbies">
+            <div class="plaque">
+                <svg class="left" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
                     <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
                 </svg>
 
-                <svg width="24" height="40" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right:8%; top: 60%;">
+                <svg class="right" width="24" height="40" xmlns="http://www.w3.org/2000/svg">
                     <rect width="16" height="32" x="4" y="4" rx="8" ry="8" style="fill:#F5F5F7; stroke-width:2px; stroke:#1D1D1F"/>
                 </svg>
-
-                <p class="block-title">Personal interests</p>
-
-                <ul>
-                    <li>Graphic design</li>
-                    <li>User experience</li>
-                    <li>Branding</li>
-                    <li>Project management</li>
-                </ul>
             </div>
+
+            <p class="block-title">Hobbies</p>
+
+            <ul>
+                <li>Running</li>
+                <li>Archery</li>
+                <li>TV shows</li>
+            </ul>
         </div>
     </div>
 
@@ -92,13 +96,13 @@
 
             <a href="designer.html">
                 <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-                    <circle r="8" cx="10" cy="10" fill="rgba(255, 255, 255, 0.8)" stroke="#E34840" stroke-width="0" />
+                    <circle r="8" cx="10" cy="10" fill="rgba(255, 255, 255, 1)" stroke="#E34840" stroke-width="0" />
                 </svg>
             </a>
 
             <a href="dev.html">
                 <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-                    <circle r="8" cx="10" cy="10" fill="rgba(255, 255, 255, 0.8)" stroke="#08B438" stroke-width="0" />
+                    <circle r="8" cx="10" cy="10" fill="rgba(255, 255, 255, 1)" stroke="#08B438" stroke-width="0" />
                 </svg>
             </a>
         </div>
