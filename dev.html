@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="dev-style.css">
     <link rel="shortcut icon" href="./assets/images/pfp.PNG">
-    <script type="text/javascript" src="animations.js"></script>
+    <script type="text/javascript" src="load-data.js"></script>
     
     <title>Developer</title>
 </head>
@@ -28,111 +28,14 @@
 
         <div class="dir">
             <img src="./assets/images/macos-home-icon.png" alt="macos-home-icon" style="height: 16px; margin-right: 4px;">
-            <p>mldm-- cv /Users/mldm-- -cv--1440x1024</p>
+            <p class="header-title"></p>
         </div>
     </div>
 
     <div id="body-container">
         <div class="cmd-content">
-            <p style="margin-bottom: 0;">Last login: Wed Nov 11 10:42:27</p>
-            <p style="margin: 0;">Welcome to Maria's Curriculum Vitae [Developer edition]</p>
-    
-            <div class="cmd-block">
-                <div class="cmd-line">   
-                    <p class="brackets">[</p>         
-
-                    <div class="cmd-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#55FF8C" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                        </svg>
-            
-                        <p class="symbol">~</p>
-                        <p class="command">ls</p>
-                    </div>
-
-                    <p class="brackets" style="position: absolute; right: 1%;">]</p>
-                </div>
-        
-                <div class="grid-container result">
-                    <p class="grid-item">Knowledge</p>
-                    <p class="grid-item">Tools</p>
-                    <p class="grid-item">Interest-areas</p>
-                    <p class="grid-item">Portfolio</p>
-                    <p class="grid-item">More-info</p>
-                </div>
-            </div>
-
-            <div class="cmd-block">
-                <div class="cmd-line">   
-                    <p class="brackets">[</p>         
-
-                    <div class="cmd-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#55FF8C" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                        </svg>
-            
-                        <p class="symbol">~</p>
-                        <p class="command">cd Knowledge</p>
-                    </div>
-
-                    <p class="brackets" style="position: absolute; right: 1%;">]</p>
-                </div>
-
-                <div class="grid-container result">
-                    <p class="grid-item">HTML+CSS+JS</p>
-                    <p class="grid-item">Python</p>
-                    <p class="grid-item">DjangoRestFramework</p>
-                    <p class="grid-item">PL/SQL</p>
-                    <p class="grid-item">Flutter</p>
-                    <p class="grid-item">React</p>
-                </div>
-            </div>
-
-            <div class="cmd-block">
-                <div class="cmd-line">   
-                    <p class="brackets">[</p>         
-
-                    <div class="cmd-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#55FF8C" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                        </svg>
-            
-                        <p class="symbol">~</p>
-                        <p class="command">cd Tools</p>
-                    </div>
-
-                    <p class="brackets" style="position: absolute; right: 1%;">]</p>
-                </div>
-
-                <div class="grid-container result">
-                    <p class="grid-item">Bootstrap</p>
-                    <p class="grid-item">Pandas</p>
-                    <p class="grid-item">MSSQL</p>
-                </div>
-            </div>
-
-            <div class="cmd-block">
-                <div class="cmd-line">   
-                    <p class="brackets">[</p>         
-
-                    <div class="cmd-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#55FF8C" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                        </svg>
-            
-                        <p class="symbol">~</p>
-                        <p class="command">cd Interest-areas</p>
-                    </div>
-
-                    <p class="brackets" style="position: absolute; right: 1%;">]</p>
-                </div>
-
-                <div class="grid-container result">
-                    <p class="grid-item">Web-developing</p>
-                    <p class="grid-item">Mobile-developing</p>
-                    <p class="grid-item">Project-management</p>
-                </div>
-            </div>
+            <p class="first-line" style="margin-bottom: 0;"></p>
+            <p class="second-line" style="margin: 0;"></p>
         </div>
     </div>
 
@@ -156,27 +59,4 @@
         </div>
     </div>
 </body>
-
-<script>    
-    const commandElements = document.querySelectorAll(".command");
-    const typingSpeed = 80; // Adjust the typing speed (milliseconds)
-
-    commandElements.forEach(commandElement => {
-    const commandText = commandElement.textContent;
-    commandElement.textContent = "";
-
-    let currentCharIndex = 0;
-
-    function typeCommand() {
-        if (currentCharIndex === commandText.length) return;
-
-        commandElement.textContent += commandText[currentCharIndex];
-        currentCharIndex++;
-
-        setTimeout(typeCommand, typingSpeed);
-    }
-
-    typeCommand();
-    });
-</script>
 </html>

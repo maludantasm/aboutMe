@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="index-style.css">
     <link rel="shortcut icon" href="./assets/images/pfp.PNG">
+    <script type="text/javascript" src="load-data.js"></script>
     
     <title>About me</title>
 </head>
@@ -14,7 +15,7 @@
         <img src="./assets/images/pfp.PNG" alt="my-pfp" style="height: 168px; position: absolute; border-radius: 100%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             
         <div class="header-text">
-            <p style="margin-bottom: 0;">Hi, I'm Maria Luiza Marques</p>
+            <p id="name" style="margin-bottom: 0;"></p>
             <p id="age-nationality"></p>
         </div>
     </div>
@@ -105,32 +106,4 @@
 
     <img class="overlay" src="./assets/images/paper-texture.png" alt="paper-texture">
 </body>
-
-<script>
-    function calculateAge(birthDate) {
-        const birthDateParts = birthDate.split('-');
-        const birthYear = parseInt(birthDateParts[0]);
-        const birthMonth = parseInt(birthDateParts[1]) - 1;
-        const birthDay = parseInt(birthDateParts[2]);
-
-        const today = new Date();
-        const currentYear = today.getFullYear();
-        const currentMonth = today.getMonth();
-        const currentDay = today.getDate();
-
-        let age = currentYear - birthYear;
-
-        if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
-            age--;
-        }
-
-        return age;
-    }
-
-    const birthDate = '2002-11-11';
-    const age = calculateAge(birthDate);
-
-    const ageElement = document.getElementById('age-nationality');
-    ageElement.textContent = `I'm ${age} years old and I'm Brazilian`;
-</script>
 </html>
