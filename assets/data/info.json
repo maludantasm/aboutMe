@@ -5,20 +5,20 @@
             "name": "Hi, I'm Maria Luiza Marques",
             "age-nationality": "I'm 21 years old and I'm Brazilian"
         },
-        "info-block": {
-            "academic-history": {
+        "info-block": [
+            {
                 "block-title": "Academic history",
                 "content": ["1 year internship at ClickDb", "1.5 years of Comp. Science at Cesar School", "2.5 years of Information Systems at CIn-UFPE", "UX/UI design certificate from EBAC", "Native Portuguese", "Fluent English", "Currently learning French"]
             },
-            "personal-interests": {
+            {
                 "block-title": "Personal interests",
                 "content": ["Graphic design", "User experience", "Branding", "Project management"]
             },
-            "hobbies": {
+            {
                 "block-title": "Hobbies",
                 "content": ["Running", "Archery", "TV Shows"]
             }  
-        }
+        ]
     },
     {
         "page": "designer.html"
