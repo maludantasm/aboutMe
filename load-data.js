@@ -9,9 +9,9 @@ function fetchJSONData() {
         })
 
         .then((data) => {
-            const currentPage = window.location.pathname.split('/')[1];
+            const currentPage = window.location.pathname.split('/')[2];
             console.log(currentPage)
-            
+
             data.forEach(item => {
                 if (item.page === currentPage) {
                     loadPage(item);
@@ -26,7 +26,7 @@ function fetchJSONData() {
   
 function loadPage(pageData) {
     switch (pageData.page) {
-        case "aboutMe":
+        case "":
         case "index.html":
             const headerNameElement = document.getElementById("name");
             const headerageNationalityElement = document.getElementById("age-nationality");
