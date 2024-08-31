@@ -9,11 +9,12 @@ function fetchJSONData() {
         })
 
         .then((data) => {
-            const currentPage = window.location.pathname.split('/')[2];
+            const currentPage = window.location.pathname.split('/');
             console.log(currentPage)
 
             data.forEach(item => {
-                if (item.page === currentPage) {
+                if (item.page === currentPage[2] || (currentPage[1] === "aboutMe" && currentPage[2] === "")) {
+                    console.log(currentPage[1], currentPage[2])
                     loadPage(item);
                 }
             });
@@ -27,7 +28,7 @@ function fetchJSONData() {
 function loadPage(pageData) {
     switch (pageData.page) {
         case "index.html":
-        case " ":
+        case "":
             const headerNameElement = document.getElementById("name");
             const headerageNationalityElement = document.getElementById("age-nationality");
 
