@@ -65,16 +65,16 @@ body {
     padding: 16px 0;
 }
 
-.block ul {
+.info-block ul {
     --icon-size: 0.8em;
 }
 
-.block li {
+.info-block li {
     padding-left: var(--gutter);
     height: 48px;
 }
 
-.block li::marker {
+.info-block li::marker {
     /* content: "\f0c9"; */
     font-family: FontAwesome;
     font-size: var(--icon-size);
@@ -135,7 +135,7 @@ body {
         margin-top: 72px;
     }
 
-    .block {
+    .info-block {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,11 +149,11 @@ body {
         width: 100%;
     }
 
-    .block ul {
+    .info-block ul {
         align-self: flex-start;
     }
 
-    .block li {
+    .info-block li {
         font-size: 20px;
         height: 72px;
     }
@@ -191,7 +191,7 @@ body {
         padding-left: 96px;
     }
 
-    .block {
+    .info-block {
         position: relative;
         margin-bottom: 40px;
     }
@@ -202,7 +202,7 @@ body {
         margin-bottom: 24px;
     }
 
-    .block li {
+    .info-block li {
         font-size: 18px;
     }
 
@@ -217,75 +217,3 @@ body {
         width: 70%;
     }
 }
-
-/* #body-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    color: #1D1D1F;
-
-    margin: 72px;
-}
-
-.second-half {
-    width: 36%;
-}
-
-.block-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 28px;
-
-    background-color: #FFFAE9;
-    border: #1D1D1F solid 2px;
-    border-radius: 40px;
-
-    height: 104px;
-}
-
-.first-half ul, .second-half ul {
-    font-size: 24px;
-    --icon-size: .8em;
-    --gutter: .5em;
-    padding: 0 0 0 var(--icon-size);
-}
-
-.first-half li, .second-half li {
-    padding-left: var(--gutter);
-    height: 56px;
-}
-
-.first-half li::marker,  .second-half li::marker {
-    font-family: FontAwesome;
-    font-size: var(--icon-size);
-}
-
-#footer-container {
-    display: flex;
-    justify-content: center;
-
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 32px;
-}
-
-.pages {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 24px;
-
-    height: 48px;
-    width: 120px;
-}
-
-.pages a {
-    height: 20px;
-    width: 20px;
-} */
