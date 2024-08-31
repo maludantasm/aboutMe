@@ -10,7 +10,8 @@ function fetchJSONData() {
 
         .then((data) => {
             const currentPage = window.location.pathname.split('/')[1];
-  
+            console.log(currentPage)
+            
             data.forEach(item => {
                 if (item.page === currentPage) {
                     loadPage(item);
