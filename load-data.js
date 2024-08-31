@@ -26,8 +26,8 @@ function fetchJSONData() {
   
 function loadPage(pageData) {
     switch (pageData.page) {
-        case " ":
         case "index.html":
+        case " ":
             const headerNameElement = document.getElementById("name");
             const headerageNationalityElement = document.getElementById("age-nationality");
 
