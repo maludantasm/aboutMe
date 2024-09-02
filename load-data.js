@@ -73,6 +73,36 @@ function loadPage(pageData) {
             break;
         
         case "designer.html":
+            const cvContentContainer = document.querySelector(".cv-content");
+
+            const frameContainer = document.createElement("div");
+            frameContainer.classList.add("grid-container");
+
+            pageData["info-frame"].forEach((frame) => {
+                const contentFrame = document.createElement("div");
+                contentFrame.classList.add("grid-item");
+
+                const itemTitle = document.createElement("p");
+                itemTitle.classList.add("item-title");
+                itemTitle.textContent = frame["item-title"];
+
+                const itemContent = document.createElement("div");
+                itemContent.classList.add("item-content");
+
+                frame["content"].forEach((item) => {
+                    const contentText = document.createElement("p");
+                    contentText.textContent = item;
+
+                    itemContent.appendChild(contentText);
+                })
+
+                contentFrame.appendChild(itemTitle);
+                contentFrame.appendChild(itemContent);
+
+                frameContainer.appendChild(contentFrame);
+                cvContentContainer.appendChild(frameContainer);
+            })
+
             break;  
 
         case "dev.html":

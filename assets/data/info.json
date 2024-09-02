@@ -21,7 +21,30 @@
         ]
     },
     {
-        "page": "designer.html"
+        "page": "designer.html",
+        "info-frame": [
+            {
+                "item-title": "knowledge",
+                "content": ["UX research", "Prototyping"]
+
+            },
+            {
+                "item-title": "tools",
+                "content": ["Figma", "Photoshop"]
+            },
+            {
+                "item-title": "interest-areas",
+                "content": ["Branding", "Prototyping", "User testing", "Project management"]
+            },
+            {
+                "item-title": "portfolio",
+                "content": []
+            },
+            {
+                "item-title": "more-info",
+                "content": []
+            }
+        ]
     },
     {
         "page": "dev.html",
