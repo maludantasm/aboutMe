@@ -8,16 +8,7 @@ body {
     margin: 0;
 }
 
-#body-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin: 16px;
-    /* background-image: url('./assets/images/fundo-de-papel-de-desenho-plano-com-linha-azul_23-2151126430.avif'); */
-}
-
-.layers, .controls, .editor {
+.header-nav, .layers, .controls, .editor {
     background-color: #FFFFFF;
     border-radius: 16px;
     font-size: smaller;
@@ -25,19 +16,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.layers {
+.header-nav {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
 
-    padding: 12px 0;
-
-    width: 336px;
-    height: 94vh;
-}
-
-.layers > div, .editor > div {
-    margin: 0 16px;
+    padding: 2px 12px;
+    margin-bottom: 16px;
 }
 
 .layers .bi-chevron-down, .editor .bi-chevron-down {
@@ -53,20 +38,17 @@ body {
     justify-content: space-between;
 
     margin: 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-bottom: 80px;
-    padding: 16px 8px;
 }
 
 .controls > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin: 0 16px;
 }
 
 .controls .bi-chevron-down {
@@ -76,44 +58,16 @@ body {
     margin-left: 8px;
 }
 
-.cv-content {
-    margin-bottom: 196px;
-}
-
-.grid-container, .grid-item .item-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 32px;
-}
-
-.grid-item {
+.item-content {
     background-color: #FFFFFF;
-    padding: 10px 16px;
-    text-align: left; 
-
-    height: 256px;
-    width: 352px;
+    padding: 10px 16px; 
 }
 
 .grid-item .item-title {
     font-size: 11px;
     color: #a5a5a5;
 
-    position: relative;
-    top: -15%;
-    left: -4%;
-}
-
-.editor {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    padding: 12px 0;
-
-    width: 272px;
-    height: 94vh;
+    margin-bottom: 4px;
 }
 
 #footer-container {
@@ -143,4 +97,126 @@ body {
 .pages a {
     height: 20px;
     width: 20px;
+}
+
+@media (min-width: 1072px) {
+    .header-nav {
+        display: none;
+    }
+
+    #body-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    
+        margin: 16px;
+    }
+
+    .layers {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        padding: 12px;
+    
+        min-width: 168px;
+        min-width: 252px;
+        max-width: 336px;
+
+        height: 94vh;
+    }
+
+    .cv-content {
+        margin-top: 12vh;
+    }
+
+    .grid-container, .grid-item .item-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .grid-item {
+        width: 20vw;
+    }
+
+    .item-content {
+        min-height: 176px;
+        height: 20vh;
+    }
+
+    .editor {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        padding: 12px;
+    
+        min-width: 200px;
+        width: 236px;
+        max-width: 272px;
+
+        height: 94vh;
+    }
+
+    .controls {
+        padding: 8px;
+    }
+
+    .controls > div {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 1073px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin: 16px;
+    }
+
+    #header-container {
+        width: 100%;
+    }
+
+    .layers {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        margin-bottom: 32px;
+
+        width: 88vw;
+        max-width: 432px;
+    }
+
+    .item-content {
+        min-height: 232px;
+        max-height: 232px;
+    }
+
+    .editor {
+        display: none;
+    }
+
+    .controls {
+        padding: 6px;
+    }
+
+    .controls > div {
+        margin: 0 8px;
+    }
+
+    .controls svg {
+        width: 12px !important;
+    }
 }
