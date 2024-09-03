@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
-    background-color: #d4ebff;
+    background-color: #e0f1ff;
     font-family: "Patrick Hand SC", cursive;
 
     position: relative;
@@ -10,13 +10,14 @@ body {
 }
 
 .overlay {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 
     width: 100%;
-    height: 100%;
+    height: 100%; */
 }
 
 #header-container {
@@ -163,7 +164,7 @@ body {
         justify-content: space-between;
       
         position: absolute;
-        top: 31%;
+        top: 32%;
         width: 18%;
     }
 }
