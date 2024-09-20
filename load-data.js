@@ -12,7 +12,7 @@ function fetchJSONData() {
             const currentPage = window.location.pathname.split('/');
 
             data.forEach(item => {
-                if (item.page === currentPage[1] || (currentPage[1] === "aboutMe" && currentPage[2] === "")) {
+                if (item.page === currentPage[2] || (currentPage[1] === "aboutMe" && currentPage[2] === "")) {
                     loadPage(item);
                 }
             });
