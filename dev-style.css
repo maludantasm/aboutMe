@@ -92,6 +92,11 @@ body {
     color: #D9ADFD;
 }
 
+.result a {
+    color: #a2b8f5;
+    margin-top: 1em;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

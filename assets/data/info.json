@@ -8,15 +8,15 @@
         "info-block": [
             {
                 "block-title": "Academic history",
-                "content": ["1 year internship at ClickDb", "1.5 years of Comp. Science at Cesar School", "2.5 years of Information Systems at CIn-UFPE", "(75%) UX/UI design certificate from EBAC", "Native Portuguese", "Fluent English", "Currently learning French"]
+                "content": ["Native Portuguese; Fluent English; Currently learning French", "1 year internship at ClickDb", "1.5 years of Comp. Science at Cesar School", "2.5 years of Information Systems at CIn-UFPE", "UX/UI design certificate from EBAC (75%)"]
             },
             {
                 "block-title": "Personal interests",
-                "content": ["Graphic design", "User experience", "Branding", "Project management"]
+                "content": ["Graphic design", "User experience", "Branding", "Project management", "Team management"]
             },
             {
                 "block-title": "Hobbies",
-                "content": ["Running", "Archery", "TV Shows"]
+                "content": ["Running", "Archery", "Sudoku", "Board games"]
             }  
         ]
     },
@@ -25,12 +25,12 @@
         "info-frame": [
             {
                 "item-title": "knowledge",
-                "content": ["UX research", "Prototyping"]
+                "content": ["UX research", "Prototyping", "Design patterns", "Branding", "Design system"]
 
             },
             {
                 "item-title": "tools",
-                "content": ["Figma", "Photoshop"]
+                "content": ["Figma", "Unsplash", "Google fonts", "Bootstrap Icons", "mycolor.space"]
             },
             {
                 "item-title": "interest-areas",
@@ -38,11 +38,7 @@
             },
             {
                 "item-title": "portfolio",
-                "content": []
-            },
-            {
-                "item-title": "more-info",
-                "content": []
+                "content": ["Maid My Day", "Sportlink"]
             }
         ]
     },
@@ -54,19 +50,23 @@
         "cmd-block": [
             {
                 "command": "ls",
-                "result": ["Knowledge", "Tools", "Interest-areas", "Portfolio", "More-info"]
+                "result": ["Knowledge", "Tools", "Interest-areas", "More-info"]
             },
             {
                 "command": "cd Knowledge",
-                "result": ["HTML+CSS+JS", "Python", "DjangoRestFramework", "PL/SQL", "Flutter", "React"]
+                "result": ["HTML+CSS+JS", "Python", "DjangoRestFramework", "PL/SQL"]
             },
             {
                 "command": "cd Tools",
-                "result": ["Bootstrap", "Pandas", "MSSQL"]
+                "result": ["VSCode", "Git", "Bootstrap", "Pandas", "MSSQL"]
             },
             {
                 "command": "cd Interest-areas",
                 "result": ["Web-developing", "Mobile-developing", "Project-management"]
+            },
+            {
+                "command": "cd More-info",
+                "result": ["Github"]
             }
         ]
     }

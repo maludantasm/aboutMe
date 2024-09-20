@@ -12,7 +12,7 @@ function fetchJSONData() {
             const currentPage = window.location.pathname.split('/');
 
             data.forEach(item => {
-                if (item.page === currentPage[2] || (currentPage[1] === "aboutMe" && currentPage[2] === "")) {
+                if (item.page === currentPage[1] || (currentPage[1] === "aboutMe" && currentPage[2] === "")) {
                     loadPage(item);
                 }
             });
@@ -89,12 +89,55 @@ function loadPage(pageData) {
                 const itemContent = document.createElement("div");
                 itemContent.classList.add("item-content");
 
-                frame["content"].forEach((item) => {
-                    const contentText = document.createElement("p");
-                    contentText.textContent = item;
+                if (itemTitle.textContent === "portfolio") {
+                    frame["content"].forEach((item) => {
+                        const portfolioLink = document.createElement("a");
+                        portfolioLink.classList.add("portfolio-link");
 
-                    itemContent.appendChild(contentText);
-                })
+                        const contentText = document.createElement("p");
+                        contentText.textContent = item;
+
+                        if (item === "Maid My Day") {
+                            portfolioLink.href = "https://www.figma.com/proto/PYT9epKi3AxUk7KgQfEBBP/mldm_proj_final?node-id=53-4638&node-type=canvas&t=IqPJat6cTOqNGihx-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=53%3A4638";
+                        }
+
+                        else if (item === "Sportlink") {
+                            portfolioLink.href = "https://www.figma.com/proto/ys0C9f5YKyNxBNfhNDZYi7/sports-project?node-id=471-583&node-type=canvas&t=X9Udw4Rw2wJoNjEM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=471%3A583";
+                        }
+
+                        portfolioLink.target = "_blank";
+
+                        const folderSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                        folderSvg.setAttribute("width", "32");
+                        folderSvg.setAttribute("height", "32");
+                        folderSvg.setAttribute("fill", "currentColor");
+                        folderSvg.setAttribute("class", "bi bi-file-play");
+                        folderSvg.setAttribute("viewBox", "0 0 16 16");
+
+                        const path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        path1.setAttribute("d", "M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z");
+                        folderSvg.appendChild(path1);
+
+                        const path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        path2.setAttribute("d", "M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z");   
+
+                        folderSvg.appendChild(path2);
+    
+                        portfolioLink.appendChild(folderSvg);
+                        portfolioLink.appendChild(contentText);
+
+                        itemContent.appendChild(portfolioLink);
+                    })
+                }
+
+                else {
+                    frame["content"].forEach((item) => {
+                        const contentText = document.createElement("p");
+                        contentText.textContent = item;
+    
+                        itemContent.appendChild(contentText);
+                    })
+                }
 
                 contentFrame.appendChild(itemTitle);
                 contentFrame.appendChild(itemContent);
@@ -175,10 +218,23 @@ function loadPage(pageData) {
                 result.classList.add("result");
 
                 command["result"].forEach((item) => {
-                    const resultText = document.createElement("p");
-                    resultText.classList.add("grid-item");
-                    resultText.textContent = item;
-                    result.appendChild(resultText);
+                    if (command["command"] === "cd More-info" && item === "Github") {
+                        const resultText = document.createElement("a");
+                        resultText.classList.add("grid-item");
+                
+                        resultText.href = "https://github.com/maludantasm";
+                        resultText.target = "_blank";
+
+                        resultText.textContent = item;
+                        result.appendChild(resultText);
+                    }
+
+                    else {
+                        const resultText = document.createElement("p");
+                        resultText.classList.add("grid-item");
+                        resultText.textContent = item;
+                        result.appendChild(resultText);
+                    }
                 });
 
                 cmdBlock.appendChild(result);
