@@ -218,15 +218,28 @@ function loadPage(pageData) {
                 result.classList.add("result");
 
                 command["result"].forEach((item) => {
-                    if (command["command"] === "cd More-info" && item === "Github") {
-                        const resultText = document.createElement("a");
-                        resultText.classList.add("grid-item");
-                
-                        resultText.href = "https://github.com/maludantasm";
-                        resultText.target = "_blank";
+                    if (command["command"] === "cd More-info") {
+                        if (item === "Linkedin") {
+                            const resultText = document.createElement("a");
+                            resultText.classList.add("grid-item");
+                    
+                            resultText.href = "https://www.linkedin.com/in/maria-luiza-dantas";
+                            resultText.target = "_blank";
 
-                        resultText.textContent = item;
-                        result.appendChild(resultText);
+                            resultText.textContent = item;
+                            result.appendChild(resultText);
+                        }
+
+                        if (item === "Github") {
+                            const resultText = document.createElement("a");
+                            resultText.classList.add("grid-item");
+                    
+                            resultText.href = "https://github.com/maludantasm";
+                            resultText.target = "_blank";
+
+                            resultText.textContent = item;
+                            result.appendChild(resultText);
+                        }
                     }
 
                     else {
@@ -251,4 +264,4 @@ function loadPage(pageData) {
     }
 }
   
-  fetchJSONData();
+fetchJSONData();

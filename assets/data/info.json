@@ -66,7 +66,7 @@
             },
             {
                 "command": "cd More-info",
-                "result": ["Github"]
+                "result": ["Linkedin", "Github"]
             }
         ]
     }
